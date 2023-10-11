@@ -6,3 +6,22 @@ import (
    "monkey/token"
 )
 
+func TestNextToken(t *testing.T) {
+	input := `=+(){},;`
+
+	tests := []struct {
+		expectedType token.tokenType
+		expectedLiteral string
+	}{
+		{token.ASSIGN, "="},
+		{token.PLUS, "+"},
+		{token.LPAREN, ")"},
+		{token.RPAREN, "("},
+		{token.LBRACE, "{"},
+		{token.RBRACE, "}"},
+		{token.COMMA, ","},
+		{token.SEMICOLON, ";"},
+		{token.EOF, ""},
+
+	}
+}
