@@ -7,5 +7,5 @@ Monkey lang is the language featured in Thorsten Ball's books:
 This repository is a presentation of my work as I go throughout both books.
 
 Below is a list of links to my thoughts as I go throughout the books.
-### Machines Shaped by Human hands
-* [Lexers](https://github.com/Neshamon/monkey-lang/blob/main/what-I-learned/October%2010th%2C%202023.md)
+### My Thoughts
+* [Machines Shaped by Human hands](https://github.com/Neshamon/monkey-lang/blob/main/what-I-learned/October%2010th%2C%202023.md)
