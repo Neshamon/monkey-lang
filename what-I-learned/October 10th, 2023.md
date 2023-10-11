@@ -1,8 +1,12 @@
-# Lexers
+# Machines Shaped by Human hands
+
+#### Intro
 
   One of the more interesting things I noticed about today as I learned about
 was when I encountered the fact that my lexer couldn't recognize the integer 5
 when running all of my test cases.
+
+#### Malleability
 
   I felt that though I have been programming for a while now, I simply didn't
 recognize that the test case could fail. And when I continued to read through
@@ -26,6 +30,8 @@ thought them to be; All programs are subject to the best efforts of an
 engineer to solve a problem. And that solution may or may not be the most
 effective. Under the right circumstances 2 + 2 can always equal 5 in a given
 language.
+
+#### Essence
 
   And this urges me to think about what the essence of a computer
 really is. All my life I've been told that they're simply very fancy calculators
