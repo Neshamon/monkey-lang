@@ -5,6 +5,8 @@ import "monkey-lang/token"
 func (l *Lexer) NextToken() token.Token {
 	var tok token.Token
 
+	l.skipWhitespace()
+
 	switch l.ch {
 	case '=':
 		tok = newToken(token.ASSIGN, l.ch)
@@ -28,7 +30,9 @@ func (l *Lexer) NextToken() token.Token {
 	default:
 		if isLetter(l.ch) {
 			tok.Literal = l.readIdentifier()
-			return tok
+			tok.Type = token.LookupIdent(tok.Literal)
+			return tok // Prevents readChar from advancing past the
+			// last char of the current identifier
 		} else {
 			tok = newToken(token.ILLEGAL, l.ch)
 		}
@@ -38,6 +42,12 @@ func (l *Lexer) NextToken() token.Token {
 	return tok
 } // NextToken() tests l.ch against each case and returns the
   // according type and stringified l.ch
+
+func (l *Lexer) skipWhitespace() {
+	for l.ch == ' ' || l.ch == '\t' || l.ch == '\n' || l.ch == '\r' {
+		l.readChar()
+	}
+}
 
 func (l *Lexer) readIdentifier() string {
 	position := l.position
