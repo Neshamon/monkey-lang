@@ -23,6 +23,10 @@
             gopls
             golangci-lint
           ];
+
+          shellHook = ''
+            echo "Welcome to the monkey-lang environment!"
+          '';
         };
       });
     };
