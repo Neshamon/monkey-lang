@@ -15,6 +15,15 @@
       });
     in
     {
-      devShells.x86_64-linux.default = (import ./shell.nix { inherit pkgs; });
+      devShells = forEachSupportedSystem ({ pkgs }: {
+        default = pkgs.mkShell {
+          packages = with pkgs; [
+            go
+            gotools
+            gopls
+            golangci-lint
+          ];
+        };
+      });
     };
 }
