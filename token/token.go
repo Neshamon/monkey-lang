@@ -19,13 +19,13 @@ const (
 	ASSIGN = "="
 	PLUS = "+"
 
-	MINUS = '-'
-	BANG = '!'
-	ASTERISK = '*'
-	SLASH = '/'
+	MINUS = "-"
+	BANG = "!"
+	ASTERISK = "*"
+	SLASH = "/"
 
-	LT = '<'
-	GT = '>'
+	LT = "<"
+	GT = ">"
 
 	// Delimiters
 	COMMA = ","
