@@ -8,4 +8,4 @@ This repository is a presentation of my work as I go throughout both books.
 
 Below is a list of links to my thoughts as I go throughout the books.
 ### My Thoughts
-* [Lexers](https://github.com/Neshamon/monkey-lang/blob/main/what-I-learned/October%2010th%2C%202023.md)
+* [Machines Shaped by Human hands](https://github.com/Neshamon/monkey-lang/blob/main/what-I-learned/October%2010th%2C%202023.md)
